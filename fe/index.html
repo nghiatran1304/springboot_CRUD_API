@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        Fullname: <input type="text" id="fullname"><br>
+        Address : <input type="text" id="address"><br>
+        Salary  : <input type="text" id="salary"><br>
+        <!-- Bạn có thể thêm các trường input khác tại đây -->
+
+        <button onclick="createCustomer()">Add</button>
+        <button onclick="updateCustomer()">Add</button>
+    </div>
+
+    <hr>
+
+    <div>
+        Search: <input type="text" id="searchName">
+        <button onclick="searchCustomer()">Search</button>
+    </div>
+
+    <hr>
+
+    <table id="customersTable">
+        <!-- Dữ liệu từ API sẽ được hiển thị ở đây -->
+    </table>
+
+  
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
